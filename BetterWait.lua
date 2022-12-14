@@ -1,16 +1,20 @@
 -- BetterWait | Version 1
+-- Version 1: Initial release.
 
 --[[
     Description - Waits for the specified child to load and returns it if found.
     Parameters -
         [object] parent - The childs parent
         [string] child - The specified child to wait for
-        [boolean] isRecursive - Whether or not to search recursively for the child
         [number] timeout - The max amount of time to search before timing out
+        [boolean] isRecursive - Whether or not to search recursively for the child
+        
     Returns - The loaded child or nil if it times out
     Errors - If no parent and child were specified
 ]]
-local function betterWait(parent, child, isRecursive, timeout)
+
+-- Local Functions
+local function betterWait(parent, child, timeout, isRecursive)
     if not parent then
         warn("No parent specified")
 
