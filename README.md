@@ -19,7 +19,7 @@ local someDeepPart = betterWait(game:GetService("Workspace"), "someDeepPart", 15
 ## Install
 ### Roblox Workflow
 You can get Reco off the Roblox Marketplace here.
-https://www.roblox.com/library/11465670869/Reco
+https://www.roblox.com/library/11821587520/BetterWait
 
 ### Rojo Workflow
 Get the `.rbxm` file from the releases page. This file can be used to sync to Studio when using Rojo.
