@@ -42,6 +42,8 @@ local function betterWait(parent, child, timeout, isRecursive)
         local _foundChild = parent:FindFirstChild(child, isRecursive)
 
         if not _foundChild then
+			task.wait(1)
+			
             return search()
         else
             return _foundChild
